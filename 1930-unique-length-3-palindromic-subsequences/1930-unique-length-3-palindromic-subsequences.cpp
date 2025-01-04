@@ -19,7 +19,7 @@ public:
                 }
             }
             unordered_set<char> st;
-            for (int middle = left+1; middle <= right-1; middle++) {
+            for (int middle = left + 1; middle <= right - 1; middle++) {
                 st.insert(s[middle]);
             }
             result += st.size();
