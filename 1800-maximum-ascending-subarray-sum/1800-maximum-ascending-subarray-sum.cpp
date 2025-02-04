@@ -12,7 +12,8 @@ public:
                 j++;
             }
             sum = max(sum , total);
-           i++;
+           
+           i = j;
 
         }
         return sum ;
