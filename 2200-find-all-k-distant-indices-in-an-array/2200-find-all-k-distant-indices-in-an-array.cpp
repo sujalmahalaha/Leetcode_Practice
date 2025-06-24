@@ -7,8 +7,8 @@ public:
         for(int i = 0 ; i< nums.size() ; i++){
             if(nums[i] == key){
                 resultset.insert(i);
-                if(i-k >= 0 && i+k <= nums.size()){
-                    for(int j = i-k && j>=0 ; j<=i+k && j<nums.size() ; j++){
+                for(int j = 0 ; j< nums.size() ; j++){
+                    if(abs(i-j)<=k){
                         resultset.insert(j);
                     }
                 }
